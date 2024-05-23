@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La esperanza encontrada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fbfd8d;
+        }
+        header {
+            background-color: #fae525e3;
+            color: rgb(7, 7, 7);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(14, 13, 13);
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+        }
+        .card p {
+            padding: 10px;
+        }
+        form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #c8ff00;
+            color: rgb(5, 5, 5);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #f6fa25e3;
+            color: rgb(15, 15, 15);
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La esperanza encontrada</h1>
+        <h3>Lizeth Juarez Alejo</h3>
+        <nav>
+            <a href="#adopcion">Adopción</a>
+            <a href="#form-adopcion">Formulario de Adopción</a>
+            <a href="#donaciones">Donaciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="adopcion">
+            <h2 class="section-title">Adopta una Mascota</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17LqOZC519PEK4eCqBhtPIe_8nY7Y-5Re5A&usqp=CAU" alt="Perrito">
+                    <p>  Canino </p>
+                    <p>
+                         Edad: 2 años
+                         Raza: Golden Reatriver
+                         Nombre: Buddy
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" alt="Gatito">
+                    <p>  Felino </p>
+                    <p>
+                         Edad: 1 años
+                         Raza: British Shorthair
+                         Nombre: Coco
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" alt="Ave">
+                    <p>  Ave </p>
+                    <p>
+                         Edad: 6 meses
+                         Raza: Canario 
+                         Nombre: Lili
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/ff/c6/70/ffc67012b39bad7d2353a21fb070c08c.jpg" alt="Roedor">
+                    <p>  Roedor </p>
+                    <p>
+                         Edad: 1 mes
+                         Raza: Cuyo
+                         Nombre: Cakeii
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-adopcion">
+            <h2 class="section-title">Formulario de Adopción</h2>
+            <form action="https://example.com/form-adopcion" method="post">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="mascota">Mascota a Adoptar:</label>
+                <select id="mascota" name="mascota">
+                    <option value="perrito">Perrito</option>
+                    <option value="gatito">Gatito</option>
+                    <option value="ave">Ave</option>
+                    <option value="roedor">Roedor</option>
+                </select>
+                
+                <label for="comentarios">Comentarios Adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="donaciones">
+            <h2 class="section-title">Apoya nuestro albergue</h2>
+            <form action="https://example.com/donaciones" method="post">
+                <label for="nombre-don">Nombre Completo:</label>
+                <input type="text" id="nombre-don" name="nombre-don" required>
+                
+                <label for="email-don">Correo Electrónico:</label>
+                <input type="email" id="email-don" name="email-don" required>
+                
+                <label for="monto">Monto a Donar:</label>
+                <input type="number" id="monto" name="monto" required>
+                
+                <label for="producto">Producto a Comprar:</label>
+                <select id="producto" name="producto">
+                    <option value="croquetas">Croquetas</option>
+                    <option value="alimento-especial">Alimento Especial</option>
+                    <option value="premios">Premios</option>
+                </select>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer id="contacto">
+        <p>Contacto: <a href="mailto:info@laesperanzaencontrada.com">info@laesperanzaencontrada.com</a></p>
+        <p>Visítanos en: <a href="https://laesperanzaencontrada.com">laesperanzaencontrada.com</a></p>
+    </footer>
+</body>
+</html>
